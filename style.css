@@ -53,20 +53,22 @@ footer {
     align-items: center;
 }
 
-/**** div container ****/
+/**** section container ****/
 
 .container {
     width: 500px;
     background-color: #fffffe;
     border-radius: 10px;
     box-shadow: 0 2px 8px 8px rgba(60, 64, 67, 0.25);
-    margin-block: 20px;
+    margin-block: 40px;
     transition: box-shadow 0.3s ease-in-out;
 }
 
 .container:hover {
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
+
+/**** div container__header ****/
 
 .container__header {
     display: flex;
@@ -104,6 +106,8 @@ footer {
     font-size: 1.45rem;
     font-weight: 500;
 }
+
+/**** div calendar ****/
 
 .calendar {
     padding: 20px;
@@ -163,4 +167,10 @@ footer {
 
 .days li:not(.active):hover::before {
     background-color: #e3f6f5;
+}
+
+/**** footer ****/
+
+footer {
+    padding-block: 20px;
 }
