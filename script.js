@@ -2,6 +2,7 @@
 const daysTag = document.querySelector(".days");
 const currentDate = document.querySelector(".current__date");
 const prevNextIcon = document.querySelectorAll(".icons span");
+const currentYear = document.querySelector(".footer__text__year");
 
 // getting new date, current year and month
 let date = new Date();
@@ -88,3 +89,10 @@ prevNextIcon.forEach((icon) => {
     renderCalendar(); // calling renderCalendar function
   });
 });
+
+// getCurrentYear function declaration
+const getCurrentYear = () => {
+  currentYear.textContent = currYear;
+};
+// calling getCurrentYear() function
+getCurrentYear();
