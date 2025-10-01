@@ -1,5 +1,7 @@
 ## CALENDRIER DYNAMIQUE EN HTML5 CSS3 ET JAVASCRIPT 📅
 
+![Design preview for the project](./img/preview.png)
+
 ## Le challenge
 
 Création d'un calendrier dynamique en HTML5, CSS3 et JavaScript.
