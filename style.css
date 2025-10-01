@@ -1,0 +1,166 @@
+/**** Importation de la police "Alan Sans" ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
+/**** Reset ****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/**** body ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    font-family: "Alan Sans", sans-serif;
+    background-color: #e3f6f5;
+    color: #272343;
+}
+
+/**** header, footer ****/
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__title,
+.footer__text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/**** main ****/
+
+.main__content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**** div container ****/
+
+.container {
+    width: 500px;
+    background-color: #fffffe;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 8px rgba(60, 64, 67, 0.25);
+    margin-block: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.container__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px 10px;
+}
+
+.container__header .icons {
+    display: flex;
+}
+
+.container__header .icons span {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #ffd803;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+}
+
+.icons span:last-child {
+    margin-right: -10px;
+}
+
+.container__header .icons span:hover {
+    background-color: #e3f6f5;
+}
+
+.container__header .current__date {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+.calendar {
+    padding: 20px;
+}
+
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.calendar .days {
+    margin-bottom: 20px;
+}
+
+.calendar li {
+    color: #272343;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+}
+
+.calendar .weeks li {
+    font-weight: 500;
+    cursor: default;
+}
+
+.calendar .days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+
+.days li.inactive {
+    color: #aaaaaa;
+}
+
+.days li.active {
+    color: #fffffe;
+}
+
+.days li::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.days li.active::before {
+    background-color: #ffd803;
+}
+
+.days li:not(.active):hover::before {
+    background-color: #e3f6f5;
+}
