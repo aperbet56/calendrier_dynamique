@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendrier dynamique en JavaScript</title>
+    <!-- Google Font Lien pour les icones -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- Importation des styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Début du header -->
+    <header>
+      <h1 class="main__title">Calendrier dynamique</h1>
+    </header>
+    <!-- Fin du header-->
+    <!-- Début du main -->
+    <main class="main__content">
+      <!-- Début de la section container -->
+      <section class="container">
+        <div class="container__header">
+          <p class="current__date"></p>
+          <div class="icons">
+            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+            <span id="next" class="material-symbols-rounded"
+              >chevron_right</span
+            >
+          </div>
+        </div>
+        <div class="calendar">
+          <ul class="weeks">
+            <li>Dim</li>
+            <li>Lun</li>
+            <li>Mar</li>
+            <li>Mer</li>
+            <li>Jeu</li>
+            <li>Ven</li>
+            <li>Sam</li>
+          </ul>
+          <ul class="days"></ul>
+        </div>
+      </section>
+      <!-- Fin de la section container -->
+    </main>
+    <!-- fin du main -->
+    <!-- Début du footer -->
+    <footer>
+      <p class="footer__text">
+        &copy; Calendrier dynamique <span class="footer__text__year"></span> -
+        Mentions légales
+      </p>
+    </footer>
+    <!-- Fin du footer -->
+
+    <!-- Importation du fichier JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
